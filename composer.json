@@ -1,0 +1,44 @@
+{
+    "name": "kruegge82/DHL-Paket-DE-Sendungsverfolgung",
+    "description": "Note: The API type is a RESTful Webservice and the Tracking API works exclusively with the GET method. Please have a look to the WADL in Download Section.",
+    "keywords": [
+        "DHL",
+        "Tracking",
+        "Paket",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jahn N."
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.5",
+        "overtrue/phplint": "^9.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": { "kruegge82\\DHLTrack\\" : "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "kruegge82\\DHLTrack\\Test\\" : "tests/" }
+    },
+    "scripts": {
+        "test": [
+            "@phplint"
+        ],
+        "phplint": "phplint"
+    }
+}
